@@ -266,8 +266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoom: 0
   zoomChangeAmount: 10
-  zoomMax: 30
-  zoomMin: 100
+  zoomMax: 100
+  zoomMin: 30
   minimapCamera: {fileID: 6750796737627635113}
 --- !u!81 &6750796737627635114
 AudioListener:

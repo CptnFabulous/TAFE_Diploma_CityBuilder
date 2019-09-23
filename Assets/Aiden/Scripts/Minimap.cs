@@ -7,8 +7,8 @@ public class Minimap : MonoBehaviour
     [Header("--==Attach to Camera==--")]
     public float zoom;
     public float zoomChangeAmount = 10f;
-    public float zoomMax = 30f;
-    public float zoomMin = 100f;
+    public float zoomMax = 100f;
+    public float zoomMin = 30f;
 
     private static Minimap instance;
     public Camera minimapCamera;
