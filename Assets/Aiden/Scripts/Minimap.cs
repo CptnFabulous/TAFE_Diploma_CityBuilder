@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Minimap : MonoBehaviour
 {
+    [Header("--==Attach to Camera==--")]
     public float zoom;
     public float zoomChangeAmount = 10f;
     public float zoomMax = 30f;
