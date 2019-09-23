@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3880422943947930644}
   m_Layer: 0
   m_Name: BuildingManagement
-  m_TagString: Untagged
+  m_TagString: BuildingManagement
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,43 +47,43 @@ MonoBehaviour:
   - name: Cinema
     purchaseCost: 30
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 7
     maintenanceCost: 50
-    income: 0
+    income: 10
     population: 0
     happiness: 5
     type: 3
   - name: Theme Park
     purchaseCost: 60
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 30
     maintenanceCost: 25
-    income: 0
+    income: 40
     population: 0
     happiness: 10
     type: 3
   - name: Zoo
     purchaseCost: 50
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 15
     maintenanceCost: 25
-    income: 0
+    income: 20
     population: 0
     happiness: 7
     type: 3
   - name: Arcade
     purchaseCost: 25
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 10
     maintenanceCost: 30
-    income: 0
+    income: 10
     population: 0
     happiness: 13
     type: 3
   - name: Parks
     purchaseCost: 10
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 1
     maintenanceCost: 30
     income: 0
     population: 0
@@ -92,24 +92,24 @@ MonoBehaviour:
   - name: Workshop
     purchaseCost: 100
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 7
     maintenanceCost: 35
-    income: 0
+    income: 10
     population: 0
     happiness: 0
     type: 0
   - name: Factory
     purchaseCost: 130
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 10
     maintenanceCost: 30
-    income: 0
+    income: 10
     population: 0
     happiness: 0
     type: 0
   - name: Coal
     purchaseCost: 150
-    energyProduction: 0
+    energyProduction: 40
     energyUsage: 0
     maintenanceCost: 25
     income: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
     type: 0
   - name: Oil
     purchaseCost: 200
-    energyProduction: 0
+    energyProduction: 80
     energyUsage: 0
     maintenanceCost: 20
     income: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
     type: 0
   - name: Nuclear
     purchaseCost: 300
-    energyProduction: 0
+    energyProduction: 100
     energyUsage: 0
     maintenanceCost: 15
     income: 0
@@ -137,52 +137,52 @@ MonoBehaviour:
   - name: Fast Food
     purchaseCost: 50
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 4
     maintenanceCost: 50
-    income: 0
+    income: 15
     population: 0
     happiness: 1
     type: 1
   - name: Supermarket
     purchaseCost: 30
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 6
     maintenanceCost: 40
-    income: 0
+    income: 15
     population: 0
     happiness: 2
     type: 1
   - name: Shopping Centre
     purchaseCost: 100
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 10
     maintenanceCost: 40
-    income: 0
+    income: 20
     population: 0
     happiness: 4
     type: 1
   - name: Restaurant
     purchaseCost: 25
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 5
     maintenanceCost: 50
-    income: 0
+    income: 20
     population: 0
     happiness: 3
     type: 1
   - name: Op Shop
     purchaseCost: 10
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 2
     maintenanceCost: 60
-    income: 0
+    income: 5
     population: 0
     happiness: 2
     type: 1
   - name: Town House
     purchaseCost: 25
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 3
     maintenanceCost: 45
     income: 0
     population: 5
@@ -191,7 +191,7 @@ MonoBehaviour:
   - name: House
     purchaseCost: 50
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 6
     maintenanceCost: 50
     income: 0
     population: 8
@@ -200,9 +200,9 @@ MonoBehaviour:
   - name: Appartment
     purchaseCost: 100
     energyProduction: 0
-    energyUsage: 0
+    energyUsage: 10
     maintenanceCost: 40
-    income: 0
+    income: 50
     population: 20
     happiness: 3
     type: 2
