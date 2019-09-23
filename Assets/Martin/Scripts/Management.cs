@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Management : MonoBehaviour
 {
-    public Buildings.buildings[] buildings;
+    public buildings[] buildings;
 }
