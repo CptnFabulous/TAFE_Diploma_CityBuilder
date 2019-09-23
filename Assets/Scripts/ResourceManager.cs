@@ -10,7 +10,7 @@ public class Resource
 
 public class ResourceManager : MonoBehaviour
 {
-
+    public GameManager gm;
 
 
     public int money;

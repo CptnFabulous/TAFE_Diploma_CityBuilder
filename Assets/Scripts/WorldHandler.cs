@@ -30,7 +30,6 @@ public class WorldHandler : MonoBehaviour
         31,
         30,
         31
-
     };
     int year;
 
