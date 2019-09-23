@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -326,6 +327,26 @@ MonoBehaviour:
   panSpeed: 5
   xDeadZone: 0.99
   yDeadZone: 0.99
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f06c5eefd90a2b499b2679a6355d3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+  income: 0
+  spending: 0
+  inDebt: 0
+  energyGeneration: 0
+  energyConsumption: 0
+  population: 0
+  happiness: 0
 --- !u!1 &1087466678
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d0eaa2600988b43aaa73a67a3ea277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayLength: 0.2
+  dayLength: 60
   date: 0
   month: 0
   year: 0

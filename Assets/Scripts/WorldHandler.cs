@@ -14,8 +14,8 @@ public class WorldHandler : MonoBehaviour
 {
     public float dayLength;
     float dayTimer;
-    public int date;
-    public int month;
+    int date;
+    int month;
     int[] daysInMonths = new int[12]
     {
         31,
@@ -32,7 +32,7 @@ public class WorldHandler : MonoBehaviour
         31
 
     };
-    public int year;
+    int year;
 
     //Date presentDay = new Date();
     
