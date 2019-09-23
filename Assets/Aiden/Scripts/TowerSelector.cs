@@ -5,7 +5,7 @@ using UnityEngine;
 public class BuildingPlacer : MonoBehaviour
 {
     //public int towerMax = 2;
-    //public int towerIndex = 1;
+    public int buildingIndex = 1;
     public int placeableCheck = 0;
 
     public Vector3 boxSize;
@@ -21,8 +21,8 @@ public class BuildingPlacer : MonoBehaviour
 
     public void SpawnBuilding(Vector3 position)
     {
-        //GameObject towerPrefab = Resources.Load<GameObject>("Prefabs/Towers/Tower " + towerIndex);
-        //Instantiate(towerPrefab, position, Quaternion.identity);
+        GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Buildings " + buildingIndex);
+        Instantiate(buildingPrefab, position, Quaternion.identity);
     }
 
     void Update()
@@ -44,6 +44,7 @@ public class BuildingPlacer : MonoBehaviour
             if (Physics.Raycast(mouseRay, out hit))
             {
                 Placeable p = hit.collider.GetComponent<Placeable>();
+
                 Collider[] placementHits = Physics.OverlapBox(boxSize, boxPosition, Quaternion.identity, ground);
 
                 if (p)
@@ -58,7 +59,7 @@ public class BuildingPlacer : MonoBehaviour
 
                     if (placeableCheck == 4)
                     {
-                        //SpawnTower(hit.transform.position);
+                        SpawnBuilding(hit.transform.position);
                         for (int i = 0; i < placementHits.Length; i++)
                         {
                             placementHits[i].gameObject.GetComponent<Placeable>().isOccupied = true;
