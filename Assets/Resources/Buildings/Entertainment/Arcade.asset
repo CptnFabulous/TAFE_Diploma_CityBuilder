@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 221c4ed5d54eb9244b20675c1a9fdb20, type: 3}
-  m_Name: Longhouse X
+  m_Script: {fileID: 11500000, guid: 38d6b92ff60a7944bb9004f1a22cfd84, type: 3}
+  m_Name: Arcade
   m_EditorClassIdentifier: 
-  _buildingSprite: {fileID: 21300000, guid: 3dcaacef22c52c5449718c874e39bd18, type: 3}
-  _size: {x: 2, y: 1}
+  _buildingName: Arcade
+  _buildingSprite: {fileID: 21300000, guid: d11aec1ad171cb1488cf6cffa206c63c, type: 3}
+  _size: {x: 1, y: 1}

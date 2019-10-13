@@ -14,26 +14,38 @@ public class BuildingObject : MonoBehaviour
     [SerializeField]
     private Vector2Int _coords = Vector2Int.zero;
 
+    private MapTile _bottomTile = null;
+
     [SerializeField]
     private int _idx = 0;
 
     #endregion
 
-    #region MonoBehaviour
+    #region Public Properties
 
-    void Update()
+    public Building BuildingData
     {
-        
+        get { return _buildingData; }
     }
+
+    public MapTile BottomTile
+    {
+        get { return _bottomTile; }
+    }
+
+    #endregion
+
+    #region MonoBehaviour Functions
 
     #endregion
 
     #region Public Funcitons
 
-    public void Setup(Building buildingData, Vector2Int mapCoords)
+    public void Setup(Building buildingData, MapTile tile)
     {
         _buildingData = buildingData;
-        _coords = mapCoords;
+        _coords = tile.Coordinates;
+        _bottomTile = tile;
 
         _spriteRenderer.sprite = _buildingData.BuildingSprite;
 
@@ -50,6 +62,11 @@ public class BuildingObject : MonoBehaviour
         _spriteRenderer.transform.position += new Vector3(sideAdjust, (spriteRect.height / (2f * pxPerUnit)) * scaleAdjust - heightAdjust, 0f);
 
         ReorderSprites();
+    }
+
+    public void Remove()
+    {
+        Destroy(gameObject);
     }
 
     #endregion
@@ -164,7 +181,7 @@ public class BuildingObject : MonoBehaviour
             {
                 squareCoverState = 1;
             }
-            else
+            else if ((lhs.x + lhs.y) > (rhs.x + rhs.y))
             {
                 squareCoverState = -1;
             }

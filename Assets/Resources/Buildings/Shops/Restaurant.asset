@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 221c4ed5d54eb9244b20675c1a9fdb20, type: 3}
-  m_Name: CoalFactory
+  m_Script: {fileID: 11500000, guid: dee7c53ef0478454d8b42164fb227c4e, type: 3}
+  m_Name: Restaurant
   m_EditorClassIdentifier: 
-  _buildingSprite: {fileID: 21300000, guid: b69727c51f6e5c4419aecf47eb27bc68, type: 3}
-  _size: {x: 2, y: 2}
+  _buildingName: Restaurant
+  _buildingSprite: {fileID: 21300000, guid: f9313a8ad5d721c4b9461393b6fd2ac9, type: 3}
+  _size: {x: 1, y: 1}

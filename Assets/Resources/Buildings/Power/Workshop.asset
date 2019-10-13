@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 221c4ed5d54eb9244b20675c1a9fdb20, type: 3}
-  m_Name: House
+  m_Script: {fileID: 11500000, guid: 4472d5f0e891a2f47b684dfe5cc8fb4f, type: 3}
+  m_Name: Workshop
   m_EditorClassIdentifier: 
+  _buildingName: Workshop
   _buildingSprite: {fileID: 21300000, guid: d11aec1ad171cb1488cf6cffa206c63c, type: 3}
   _size: {x: 1, y: 1}

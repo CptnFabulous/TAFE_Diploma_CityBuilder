@@ -33,6 +33,8 @@ public class MapGenerator : MonoBehaviour
         GameObject mapRoot = new GameObject("MapRoot");
         mapRoot.transform.SetParent(transform);
 
+        MapTile[,] tiles = new MapTile[_size, _size];
+
         for (int i = 0; i < _size; ++i)
         {
             for (int j = 0; j < _size; ++j)
@@ -42,6 +44,7 @@ public class MapGenerator : MonoBehaviour
                 tileObj.transform.SetParent(mapRoot.transform);
 
                 MapTile tile = tileObj.GetComponent<MapTile>();
+                tiles[i, j] = tile;
 
                 if (((i + j) % 2) == 0)
                 {
@@ -49,6 +52,22 @@ public class MapGenerator : MonoBehaviour
                 }
 
                 tile.Coordinates = new Vector2Int(i, j);
+            }
+        }
+
+        for (int i = 0; i < _size; ++i)
+        {
+            for (int j = 0; j < _size; ++j)
+            {
+                if (i != _size - 1)
+                {
+                    tiles[i, j].XNeighbour = tiles[i + 1, j];
+                }
+
+                if (j != _size - 1)
+                {
+                    tiles[i, j].YNeighbour = tiles[i, j + 1];
+                }
             }
         }
 

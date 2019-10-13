@@ -52,12 +52,12 @@ public class HousePlacer : MonoBehaviour
             Vector3 positionSizeAdjust = Quaternion.Euler(45f, 0f, 45f) * Vector3.up * (float)(_currentBuilding.Size.y - 1) / 2f;
             positionSizeAdjust += Quaternion.Euler(45f, 0f, 45f) * Vector3.right * (float)(_currentBuilding.Size.x - 1) / 2f;
             _selectionMarker.transform.position = hit.collider.transform.position + Quaternion.Euler(45f, 0f, 45f) * Vector3.back * 0.1f + positionSizeAdjust;
-            _selectionRenderer.material = ((tile.Occupied) ? _badSelection : _goodSelection);
+            _selectionRenderer.material = ((tile.IsOccupied(_currentBuilding)) ? _badSelection : _goodSelection);
         }
 
         if ((null != tile) && (Input.GetMouseButtonDown(0)))
         {
-            if (!tile.Occupied)
+            if (!tile.IsOccupied(_currentBuilding))
             {
                 tile.SpawnHouse(_currentBuilding);
                 _active = false;
@@ -78,6 +78,11 @@ public class HousePlacer : MonoBehaviour
         _currentBuilding = building;
         _active = true;
         _selectionMarker.transform.localScale = new Vector3(_currentBuilding.Size.x - 0.2f, _currentBuilding.Size.y - 0.2f, 0.1f);
+    }
+
+    public void StopPlacement()
+    {
+        _active = false;
     }
 
     #endregion

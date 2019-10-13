@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "New Building", menuName = "Building", order = 52)]
 public class Building : ScriptableObject
 {
     #region Private Variables
+
+    [SerializeField]
+    private string _buildingName = "Building";
 
     [SerializeField]
     private Sprite _buildingSprite = null;
@@ -17,6 +19,11 @@ public class Building : ScriptableObject
     #endregion
 
     #region Public Properties
+
+    public string BuildingName
+    {
+        get { return _buildingName; }
+    }
 
     public Sprite BuildingSprite
     {
